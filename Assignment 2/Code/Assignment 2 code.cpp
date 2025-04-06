@@ -9,6 +9,7 @@ struct Patient {
     string condition;
     int priority;
     int arrivalOrder;
+
     bool operator<(const Patient& other) const {
         if (priority == other.priority)
             return arrivalOrder > other.arrivalOrder; // Earlier arrival gets treated first
